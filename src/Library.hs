@@ -26,20 +26,20 @@ haceFrioCelsius grados = grados <= 8
 
 -- escriban el tipo de esta función
 haceFrioFahrenheit :: Number -> Bool
-haceFrioFahrenheit grados = grados <= 46.4
+haceFrioFahrenheit grados = haceFrioCelsius (fahrenheitACelsius grados)
 
 -- 2.5 Bonus OPCIONAL
 perimetroCirculo :: Number -> Number
-perimetroCirculo radio = implementame
+perimetroCirculo radio = 2* 3.14 * radio 
 
 perimetroCuadrado :: Number -> Number
-perimetroCuadrado lado = implementame
+perimetroCuadrado lado = 4 * lado
 
 superficieCuadrado :: Number -> Number
-superficieCuadrado lado = implementame
+superficieCuadrado lado = lado * lado
 
 superficieCubo :: Number -> Number
-superficieCubo lado = implementame
+superficieCubo lado = 6 * superficieCuadrado lado
 
 superficieCilindro :: Number -> Number -> Number
-superficieCilindro radio altura = implementame
+superficieCilindro radio altura = 2 * 3.14 * radio * altura + 2 * 3.14 * radio * radio
